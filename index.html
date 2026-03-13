@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Outdoor Gazebo Scene</title>
+  <title>Outdoor Scene</title>
   <script src="aframe.js"></script>
   <style>
     body { margin: 0; overflow: hidden; }
@@ -23,9 +23,7 @@
   <a-scene background="color: #87CEEB" fog="type: linear; color: #c9e8f5; near: 30; far: 80">
 
     <!-- ═══════════════════ CAMERA ═══════════════════ -->
-    <a-camera position="0 1.6 9" look-controls wasd-controls>
-      <a-cursor color="#ffffff" opacity="0.7"></a-cursor>
-    </a-camera>
+    <a-camera position="0 1.6 9" look-controls wasd-controls></a-camera>
 
     <!-- ═══════════════════ LIGHTING ═══════════════════ -->
     <a-light type="ambient" color="#e8f4ff" intensity="0.7"></a-light>
@@ -37,7 +35,7 @@
     <!-- ═══════════════════ GROUND ═══════════════════ -->
     <!-- Main grass plane -->
     <a-plane position="0 0 0" rotation="-90 0 0" width="60" height="60"
-             color="#4a8c3f" material="roughness:1; metalness:0"></a-plane>
+             color="#4a8c3f" material="roughness:2; metalness:0"></a-plane>
     <!-- Darker inner ground ring -->
     <a-plane position="0 0.01 0" rotation="-90 0 0" width="20" height="20"
              color="#3d7a34"></a-plane>
@@ -287,20 +285,6 @@
     <a-light type="point" color="#ffe082" intensity="0.5" distance="5" position=" 3.2 3.2 3.2"></a-light>
     <a-light type="point" color="#ffe082" intensity="0.4" distance="5" position="-3.2 3.2 -2.6"></a-light>
     <a-light type="point" color="#ffe082" intensity="0.4" distance="5" position=" 3.2 3.2 -2.6"></a-light>
-
-    <!-- ═══════════════════ DECORATIVE STONES ═══════════════════ -->
-    <!-- Stone clusters left and right of path -->
-    <a-sphere position="-0.8 0.1 5.5"  radius="0.18" color="#9e9e9e" material="roughness:1"></a-sphere>
-    <a-sphere position="-1.1 0.08 5.2" radius="0.12" color="#bdbdbd" material="roughness:1"></a-sphere>
-    <a-sphere position="-0.6 0.07 5.0" radius="0.1"  color="#757575" material="roughness:1"></a-sphere>
-    <a-sphere position=" 0.8 0.1 5.5"  radius="0.18" color="#9e9e9e" material="roughness:1"></a-sphere>
-    <a-sphere position=" 1.1 0.08 5.2" radius="0.12" color="#bdbdbd" material="roughness:1"></a-sphere>
-    <a-sphere position=" 0.6 0.07 5.0" radius="0.1"  color="#757575" material="roughness:1"></a-sphere>
-    <!-- Stones around the gazebo platform edge -->
-    <a-sphere position="-2.6 0.1 1.8"  radius="0.14" color="#9e9e9e"></a-sphere>
-    <a-sphere position=" 2.6 0.1 1.8"  radius="0.14" color="#9e9e9e"></a-sphere>
-    <a-sphere position="-2.7 0.1 -1.0" radius="0.12" color="#bdbdbd"></a-sphere>
-    <a-sphere position=" 2.7 0.1 -1.0" radius="0.12" color="#bdbdbd"></a-sphere>
 
     <!-- ═══════════════════ SMALL FENCE / BORDER ═══════════════════ -->
     <!-- Low wooden fence posts + rails along path edges -->
